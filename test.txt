@@ -1,1 +1,12 @@
-> This time surelly...
+// Animation Canceling
+
+?item.left.state = 3
+  equipL *0 wand
+  equipL @item.left@
+?item.right.state = 3
+  ?time % 2
+    equipR throw
+  :
+    equipR *0 shield
+  equip @item.right@
+
