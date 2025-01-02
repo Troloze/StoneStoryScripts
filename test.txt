@@ -10,3 +10,16 @@
     equipR *0 shield
   equip @item.right@
 
+?loc.begin
+  ?loc = caves
+    loadout 1
+    equip *max repeating crossbow
+    loadout 2
+    equipL star stone
+    equipR triskelion stone
+
+?loc = caves
+  ?foe.GetCount(22) > 0
+    loadout 1
+  : 
+    loadout 2
